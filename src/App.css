@@ -1,0 +1,103 @@
+body {
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-container {
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;   /* ✅ responsive fix */
+  text-align: center;
+  box-sizing: border-box; /* ✅ ensures padding count ho */
+  overflow: hidden;       /* ✅ cheezen bahar na niklein */
+}
+
+h1 {
+  color: #6a1b9a;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* ✅ agar jagah kam ho to neeche chale */
+}
+
+form input {
+  flex: 1;
+  min-width: 0; /* ✅ overflow stop */
+  padding: 10px;
+  border: 2px solid #a6c1ee;
+  border-radius: 10px;
+  outline: none;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+form input:focus {
+  border-color: #6a1b9a;
+  box-shadow: 0 0 6px rgba(106, 27, 154, 0.4);
+}
+
+form button {
+  background: #6a1b9a;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  white-space: nowrap; /* ✅ button text break na ho */
+}
+
+form button:hover {
+  background: #8e24aa;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background: #f3e5f5;
+  margin: 8px 0;
+  padding: 10px 14px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+  word-break: break-word; /* ✅ long text break ho */
+}
+
+li:hover {
+  background: #e1bee7;
+}
+
+li button {
+  background: #50d2ef;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  flex-shrink: 0; /* ✅ button compress na ho */
+}
+
+li button:hover {
+  background: #d32fc5;
+}
